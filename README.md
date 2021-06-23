@@ -1,9 +1,12 @@
 # GPA_Calc
-This is a very GPA calculator I made using python. Looking to recieve feedback on my code.
+This is a very limited GPA calculator I made using python. Looking to recieve feedback on my code.
 class GPA:
+    
     def __init__(self, classes):
         GPA.classes = classes
     
+    #Converts letter grade and credit into a value that can be added to the GPA
+   
     def gpa(credit,grade,counter):
         credit /= 3
         if grade[counter] == "A":
@@ -30,6 +33,9 @@ class GPA:
             credit *= 0.0
         
         return credit
+        
+        #This diveds the total score and asks for the credit value and letter grade
+       
     def credits(self):
         credits = []
         grade = []
